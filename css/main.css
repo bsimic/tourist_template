@@ -87,6 +87,8 @@ body{
     border: 1px solid #769FCD;
     border-radius: 5px;
     padding: 25px;
+    background: url("sea.jpg") repeat fixed 100%;
+
 }
 
 #feature-apartments h2{
@@ -209,6 +211,7 @@ body{
     border: 1px solid #769FCD;
     border-radius: 5px;
     padding: 25px;
+    background: url("sea2.jpg") repeat fixed 100%;
 }
 
 #feature-villas {
