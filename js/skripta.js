@@ -126,10 +126,10 @@ $(document).ready(function(){
   span5.onclick = function() {
     modal5.style.display = "none";
   }
-  span5.onclick = function() {
+  span6.onclick = function() {
     modal6.style.display = "none";
   }
-  span5.onclick = function() {
+  span7.onclick = function() {
     modal7.style.display = "none";
   }
   span8.onclick = function() {
