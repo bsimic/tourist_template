@@ -6,7 +6,6 @@ body{
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: #6c6f73;
-
 }
 
 #stage{
@@ -200,7 +199,7 @@ body{
 }
 #feature-villas{
     color: #112D4E;
-    background-color: #E8E2E2;
+    background-color: #DFEBED;
     width: 100%;
     border: 1px solid #769FCD;
     border-radius: 5px;
@@ -257,17 +256,17 @@ body{
   border-radius: 5px;
 }
 
+#foot h1{
+  color: #DBE2EF;
+}
+
 footer{
   background: #112D4E;
   color: #F9F7F7;
   width: 100%;
   padding-top: 20px;
 }
-/*odredivanje stila za h3 */
-h3{
-    color: #769FCD;
-    font-weight: bold;
-}
+
 /*Kontakt forma */
 
 div.kontakt{
@@ -276,7 +275,7 @@ div.kontakt{
 }
 
 label{
-    color: #D7F2F7;
+    color: #F9F7F7;
 }
 input.text{
     height: 20px;
