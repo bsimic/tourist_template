@@ -1,0 +1,297 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #6c6f73;
+
+}
+
+#stage{
+  background: url("http://www.visiteurope.com/images/images/v1/Other_Adriatic_Coast-1_HD_L.JPEG") center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#stage-caption{
+  font-size: 1.4rem;
+  font-weight: 200;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#stage-caption h1, h3{
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#stage-caption p{
+  color: black;
+}
+
+
+/*navbar customizacija*/
+.navbar-custom {
+	  background: #769FCD;
+    background: linear-gradient(#769FCD, #769FCD); /* Standard syntax */
+    color:#F7FBFC;
+  	border-radius:5px;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  	color:#F7FBFC;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #F7FBFC;
+	  background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #D6E6F2;
+    color: #769FCD;
+    border-radius: 2px;
+
+}
+
+.navbar-custom .navbar-brand {
+  	color:#F7FBFC;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#F7FBFC;
+}
+.navbar-custom .icon-bar {
+  	background-color:#000000;
+}
+
+#feature-apartments{
+  background: lightblue;
+}
+#feature-apartments h2{
+  text-align: center;
+}
+
+.feature-img{
+  width: 300px;
+  height: 200px;
+}
+
+.card{
+  padding: 50px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*feature-apartments*/
+#feature-apartments{
+    color: #384259;
+    background-color: #B9D7EA;
+    width: 100%;
+    border: 1px solid #769FCD;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#feature-apartments {
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+#feature-apartments  img{
+    width: 100%;
+}
+
+/*customizacija modala*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background: linear-gradient(#B9D7EA, #B9D7EA);
+    color: #384259;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #769FCD;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #384259;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #769FCD;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* tipka za saznaj vise */
+.more{
+    background: none;
+    border:none;
+    padding: 0;
+    font-style: italic;
+    font-weight: bold;
+    color: #769FCD;
+}
+
+.more:hover{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    font-style:italic;
+    font-weight: bold;
+    color: #F7FBFC;
+}
+
+/*buttoni za rezervaciju */
+#feature-apartments .botunko{
+	background-color:#769FCD;
+	border-radius:6px;
+	border:1px solid #B9D7EA;
+	display:inline-block;
+	cursor:pointer;
+	color:#F7FBFC;
+	font-family: Roboto;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #354D62;
+	float: right;
+
+}
+
+#feature-apartments  .botunko:hover{
+    color: #B9D7EA;
+}
+
+/*google maps box */
+#map {
+    width: 80%;
+    height: 350px;
+    margin-bottom: 50px;
+	  border: 2px solid #D6E6F2;
+	  border-radius: 5px;
+
+}
+
+#foot{
+  width: 100%;
+  background: #769FCD;
+  border: 2px solid #B9D7EA;
+  border-radius: 5px;
+}
+
+footer{
+  background: #769FCD;
+  color: #fff;
+  width: 100%;
+  padding-top: 20px;
+}
+/*odredivanje stila za h3 */
+h3{
+    color: #769FCD;
+    font-weight: bold;
+}
+/*Kontakt forma */
+
+div.kontakt{
+    padding: 5px;
+    width: 80%;
+}
+
+label{
+    color: #D7F2F7;
+}
+input.text{
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+textarea.poruka{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#kontakt{
+   width: 100%;
+   padding: 5px;
+}
+/*
+/* Korisni linkovi
+#linkovi {
+    width: 100%;
+}
+#linkovi {
+    font-size:20px;
+    color:#D7F2F7;
+}
+
+#linkovi li {
+    display: block;
+}
+
+#linkovi li:before
+{
+    /*glyphicon > kod linkova
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 15px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #D7F2F7;
+}
+
+#linkovi li a:link {
+    color: #D7F2F7;
+}
+#linkovi li a:visited {
+    color: #D7F2F7;
+}
+#linkovi li a:hover {
+    color: #fff;
+    font-size: 22px;
+
+}
+ */
+/*copyright */
+#copy{
+  color: #F7FBFC;
+  font-size: 10px;
+  text-align: center;
+  font-style: italic;
+}
+/*svg velicina */
+svg{
+    width: 100px;
+    height: 100px;
+}
