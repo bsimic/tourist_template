@@ -9,7 +9,8 @@ body{
 }
 
 #stage{
-  background: url("http://www.visiteurope.com/images/images/v1/Other_Adriatic_Coast-1_HD_L.JPEG") center center no-repeat;
+  background: url("http://www.visiteurope.com/images/images/v1/Other_Adriatic_Coast-1_HD_L.JPEG") repeat fixed 100%;
+  /*center center no-repeat;*/
   background-size: cover;
   color: white;
   height: 100%;
@@ -49,16 +50,15 @@ body{
   	color:#F7FBFC;
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #F9F7F7;
+    color: #112D4E;
 	  background-color:transparent;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #3F72AF;
-    color: #DBE2EF;
+    background-color: #112D4E;
+    color: #769FCD;
     border-radius: 2px;
-
 }
 
 /*Apartmani */
