@@ -39,14 +39,14 @@ body{
 
 /*navbar customizacija*/
 .navbar-custom {
-	  background-color: lightblue;
+	  background-color: #112D4E;
     color:#F9F7F7;
-  	border-radius:0px;
+  	border-radius:5px;
     opacity: 0.8;
 }
 
 .navbar-custom .navbar-nav > li > a {
-  	color: black;
+  	color:#F7FBFC;
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #F9F7F7;
@@ -59,10 +59,6 @@ body{
     color: #DBE2EF;
     border-radius: 2px;
 
-}
-
-.navbar-custom .icon-bar {
-  background-color: black;
 }
 
 /*Apartmani */
@@ -246,8 +242,8 @@ body{
 
 /*google maps box */
 #map {
-    width: 100%;
-    height: 50%;
+    width: 80%;
+    height: 350px;
     margin-bottom: 50px;
 	  border: 2px solid #D6E6F2;
 	  border-radius: 5px;
@@ -300,7 +296,7 @@ textarea.poruka{
 /*copyright */
 #copy{
   color: #F9F7F7;
-  font-size: 20px;
+  font-size: 10px;
   text-align: center;
   font-style: italic;
 }
