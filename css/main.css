@@ -62,10 +62,6 @@ body{
 }
 
 /*Apartmani */
-#feature-apartments h2{
-  text-align: center;
-}
-
 .feature-img{
   width: 400px;
   height: 200px;
@@ -87,6 +83,16 @@ body{
     border: 1px solid #769FCD;
     border-radius: 5px;
     padding: 25px;
+}
+
+#feature-apartments h2{
+    margin: 1em 0 0.5em 0;
+    color: #112D4E;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 #feature-apartments {
@@ -115,8 +121,8 @@ body{
 
 /* Modal Content/Box */
 .modal-content {
-    background: linear-gradient(#B9D7EA, #B9D7EA);
-    color: #384259;
+    background: linear-gradient(#3F72AF, #3F72AF);
+    color: #F9F7F7;
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #769FCD;
@@ -126,7 +132,7 @@ body{
 
 /* The Close Button */
 .close {
-    color: #384259;
+    color: #F9F7F7;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -134,7 +140,7 @@ body{
 
 .close:hover,
 .close:focus {
-    color: #769FCD;
+    color: #112D4E;
     text-decoration: none;
     cursor: pointer;
 }
@@ -145,7 +151,7 @@ body{
     padding: 0;
     font-style: italic;
     font-weight: bold;
-    color: #769FCD;
+    color: #3F72AF;
 }
 
 .more:hover{
@@ -155,17 +161,17 @@ body{
     padding:0;
     font-style:italic;
     font-weight: bold;
-    color: #F7FBFC;
+    color: #112D4E;
 }
 
 /*buttoni za rezervaciju */
 #feature-apartments .botunko{
-	background-color:#769FCD;
+	background-color:#112D4E;
 	border-radius:6px;
-	border:1px solid #B9D7EA;
+	border:1px solid #F9F7F7;
 	display:inline-block;
 	cursor:pointer;
-	color:#F7FBFC;
+	color:#F9F7F7;
 	font-family: Roboto;
 	font-size:14px;
 	font-weight:bold;
@@ -177,17 +183,23 @@ body{
 }
 
 #feature-apartments  .botunko:hover{
-    color: #B9D7EA;
+    color: #3F72AF;
 }
 
 /*villas*/
 /*feature-apartments*/
 
 #feature-villas h2{
-  text-align: center;
+      margin: 1em 0 0.5em 0;
+      color: #112D4E;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 40px;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
 }
 #feature-villas{
-    color: #384259;
+    color: #112D4E;
     background-color: #E8E2E2;
     width: 100%;
     border: 1px solid #769FCD;
@@ -207,9 +219,9 @@ body{
 
 /*buttoni za rezervaciju */
 #feature-villas .botunko{
-	background-color:#769FCD;
+	background-color:#112D4E;
 	border-radius:6px;
-	border:1px solid #B9D7EA;
+	border:1px solid #F9F7F7;
 	display:inline-block;
 	cursor:pointer;
 	color:#F7FBFC;
@@ -224,7 +236,7 @@ body{
 }
 
 #feature-villas  .botunko:hover{
-    color: #B9D7EA;
+    color: #3F72AF;
 }
 
 
@@ -281,44 +293,6 @@ textarea.poruka{
    width: 100%;
    padding: 5px;
 }
-/*
-/* Korisni linkovi
-#linkovi {
-    width: 100%;
-}
-#linkovi {
-    font-size:20px;
-    color:#D7F2F7;
-}
-
-#linkovi li {
-    display: block;
-}
-
-#linkovi li:before
-{
-    /*glyphicon > kod linkova
-    content: "\e080";
-    font-family: 'Glyphicons Halflings';
-    font-size: 15px;
-    float: left;
-    margin-top: 4px;
-    margin-left: -17px;
-    color: #D7F2F7;
-}
-
-#linkovi li a:link {
-    color: #D7F2F7;
-}
-#linkovi li a:visited {
-    color: #D7F2F7;
-}
-#linkovi li a:hover {
-    color: #fff;
-    font-size: 22px;
-
-}
- */
 /*copyright */
 #copy{
   color: #F9F7F7;
