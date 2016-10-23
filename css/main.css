@@ -71,10 +71,7 @@ body{
 .navbar-custom .icon-bar {
   	background-color:#000000;
 }
-
-#feature-apartments{
-  background: lightblue;
-}
+/*Apartmani */
 #feature-apartments h2{
   text-align: center;
 }
@@ -192,6 +189,54 @@ body{
 #feature-apartments  .botunko:hover{
     color: #B9D7EA;
 }
+
+/*villas*/
+/*feature-apartments*/
+
+#feature-villas h2{
+  text-align: center;
+}
+#feature-villas{
+    color: #384259;
+    background-color: #B9D7EA;
+    width: 100%;
+    border: 1px solid #769FCD;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+#feature-villas {
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 5px;
+}
+
+#feature-villas  img{
+    width: 100%;
+}
+
+/*buttoni za rezervaciju */
+#feature-villas .botunko{
+	background-color:#769FCD;
+	border-radius:6px;
+	border:1px solid #B9D7EA;
+	display:inline-block;
+	cursor:pointer;
+	color:#F7FBFC;
+	font-family: Roboto;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #354D62;
+	float: right;
+
+}
+
+#feature-villas  .botunko:hover{
+    color: #B9D7EA;
+}
+
 
 /*google maps box */
 #map {
