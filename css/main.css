@@ -208,7 +208,7 @@ body{
 /*buttons */
 /*button za kontakte*/
 
-.contact-butt{
+.contact-button{
   background-color:#089DE3;
 	border-radius:6px;
 	border:0px solid #089DE3;
@@ -224,7 +224,7 @@ body{
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.contact-butt:hover{
+.contact-button:hover{
   color: #FA8F26;
 }
 /*buttoni za rezervaciju */
