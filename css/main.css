@@ -41,23 +41,24 @@ body{
 
 /*navbar customizacija*/
 .navbar-custom {
-	  background-color: #FF5722;
+	  background-color: #089DE3;
     color:#F9F7F7;
   	border-radius:0px;
     opacity: 0.8;
 }
 
 .navbar-custom .navbar-nav > li > a {
-  	color: F9F7F7;
+  	color: #F9F7F7;
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #303841;
-    background-color:transparent;
+    background-color: #37AFE7;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #00ADB5;
+    color: #FA8F26;
+    background-color: #37AFE7;
 }
 
 
@@ -95,7 +96,7 @@ body{
 
 #feature-apartments h2{
     margin: 1em 0 0.5em 0;
-    color: #FF5722;
+    color: #089DE3;
     font-weight: normal;
     font-size: 30px;
     line-height: 40px;
@@ -129,15 +130,18 @@ body{
     color: #303841;
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #F9A828;
+    border: 1px solid #303841;
     width: 50%; /* Could be more or less, depending on screen size */
     text-align: left;
     background: url("sea.jpg") repeat fixed 50%;
 }
 
+.modal h4{
+  color: #089DE3;
+}
 /* The Close Button */
 .close {
-    color: #FF5722;
+    color: #089DE3;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -157,7 +161,7 @@ body{
     padding: 0;
     font-style: italic;
     font-weight: bold;
-    color: #00ADB5;
+    color: #FA8F26;
 }
 
 .more:hover{
@@ -167,7 +171,7 @@ body{
     padding:0;
     font-style:italic;
     font-weight: bold;
-    color: #FF5722;
+    color: #089DE3;
 }
 
 /*villas*/
@@ -175,7 +179,7 @@ body{
 
 #feature-villas h2{
       margin: 1em 0 0.5em 0;
-      color: #FF5722;
+      color: #089DE3;
       font-weight: normal;
       font-size: 30px;
       line-height: 40px;
@@ -199,19 +203,68 @@ body{
     width: 100%;
 }
 
+/*buttons */
+
+/*button za kontakte*/
+
+.contact-buttons{
+  background-color:#089DE3;
+	border-radius:6px;
+	border:0px solid #089DE3;
+	display:inline-block;
+	cursor:pointer;
+	color:#F9F7F7;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #354D62;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact-buttons:hover{
+  color: #FA8F26;
+}
+
+/*buttoni za rezervaciju */
+.botunko{
+	background-color:#089DE3;
+	border-radius:6px;
+	border:0px solid #089DE3;
+	display:inline-block;
+	cursor:pointer;
+	color:#F9F7F7;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #354D62;
+	float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.botunko:hover{
+    color: #FA8F26;
+}
+
+
 /*google maps box */
 #map {
     width: 100%;
     height: 50%;
     margin-bottom: 50px;
-    border: 1px solid #FF5722;
+    border: 1px solid #089DE3;
     border-radius: 5px;
 }
 
 #foot{
   width: 100%;
-  background: #00ADB5;
-  border: 0px solid #3F72AF;
+  background: #025A84;
+  border: 0px solid #FA8F26;
 
 }
 
@@ -272,56 +325,9 @@ textarea:focus, input:focus {
   text-align: center;
   font-style: italic;
 }
+
 /*svg velicina */
 svg{
     width: 100px;
     height: 100px;
-}
-
-/*buttons */
-
-/*button za kontakte*/
-
-.contact-buttons{
-  background-color:#FF5722;
-	border-radius:6px;
-	border:0px solid #FF5722;
-	display:inline-block;
-	cursor:pointer;
-	color:#F9F7F7;
-	font-family: 'Roboto', sans-serif;
-	font-size:14px;
-	font-weight:bold;
-	padding:0px 27px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #354D62;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.contact-buttons:hover{
-  color: #3F72AF;
-}
-
-/*buttoni za rezervaciju */
-.botunko{
-	background-color:#FF5722;
-	border-radius:6px;
-	border:0px solid #FF5722;
-	display:inline-block;
-	cursor:pointer;
-	color:#F9F7F7;
-	font-family: 'Roboto', sans-serif;
-	font-size:14px;
-	font-weight:bold;
-	padding:0px 27px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #354D62;
-	float: right;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.botunko:hover{
-    color: #3F72AF;
 }
