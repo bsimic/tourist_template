@@ -91,7 +91,7 @@ body{
     background-color: #DBE2EF;
     width: 100%;
     border: 1px solid #303841;
-    padding: 50px;
+    padding: 25px;
     background: url("sea.jpg") repeat fixed 50%;
     font-size: 14px;
     font-family: sans-serif;
@@ -194,7 +194,7 @@ body{
     background-color: #DFEBED;
     width: 100%;
     border: 1px solid #303841;
-    padding: 50px;
+    padding: 25px;
     background: url("sea.jpg") repeat fixed 100%;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
@@ -211,7 +211,6 @@ body{
     margin-bottom: 50px;
     border: 1px solid #FF5722;
     border-radius: 5px;
-
 }
 
 #foot{
