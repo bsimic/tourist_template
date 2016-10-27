@@ -45,7 +45,6 @@ body{
     color:#F9F7F7;
   	border-radius:0px;
     opacity: 0.8;
-
 }
 
 .navbar-custom .navbar-nav > li > a {
@@ -58,14 +57,10 @@ body{
 
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #EEEEEE;
     color: #00ADB5;
-    border-radius: 2px;
 }
 
-.navbar-custom .icon-bar {
-    background-color: #F9F7F7;
-}
+
 
 /*Apartmani */
 .feature-img{
@@ -74,7 +69,7 @@ body{
 }
 
 .card{
-  padding: 25px;
+  padding: 20px;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 20px;
