@@ -8,6 +8,8 @@ body{
   color: #6c6f73;
 }
 
+
+
 #stage{
   background: url("http://www.visiteurope.com/images/images/v1/Other_Adriatic_Coast-1_HD_L.JPEG") repeat fixed 100%;
   background-size: cover;
@@ -98,12 +100,13 @@ body{
 
 #feature-apartments h2{
     margin: 1em 0 0.5em 0;
-    color: #303841;
+    color: #FF5722;
     font-weight: normal;
     font-size: 30px;
     line-height: 40px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-style:italic;
 }
 
 
@@ -128,12 +131,13 @@ body{
 /* Modal Content/Box */
 .modal-content {
     background: linear-gradient(#ECECEB, #ECECEB);
-    color: #FF5722;
+    color: #303841;
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #F9A828;
     width: 50%; /* Could be more or less, depending on screen size */
     text-align: left;
+    background: url("sea.jpg") repeat fixed 50%;
 }
 
 /* The Close Button */
@@ -171,18 +175,18 @@ body{
     color: #FF5722;
 }
 
-
 /*villas*/
 /*feature-villas*/
 
 #feature-villas h2{
       margin: 1em 0 0.5em 0;
-      color: #303841;
+      color: #FF5722;
       font-weight: normal;
       font-size: 30px;
       line-height: 40px;
       font-family: 'Roboto', sans-serif;
       text-align: center;
+      font-style:italic;
 }
 
 #feature-villas{
