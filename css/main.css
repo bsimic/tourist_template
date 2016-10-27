@@ -10,7 +10,6 @@ body{
 
 #stage{
   background: url("http://www.visiteurope.com/images/images/v1/Other_Adriatic_Coast-1_HD_L.JPEG") repeat fixed 100%;
-  /*center center no-repeat;*/
   background-size: cover;
   color: white;
   height: 100%;
@@ -40,7 +39,7 @@ body{
 
 /*navbar customizacija*/
 .navbar-custom {
-	  background-color: #112D4E;
+	background-color: #112D4E;
     color:#F9F7F7;
   	border-radius:0px;
     opacity: 0.8;
@@ -76,6 +75,10 @@ body{
   text-align: left;
   margin-top: 20px;
   margin-bottom: 20px;
+
+   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -84,10 +87,11 @@ body{
     color: #384259;
     background-color: #DBE2EF;
     width: 100%;
-    border: 0px solid #769FCD;
-    border-radius: 5px;
-    padding: 25px;
+    border: 1px solid #769FCD;
+    padding: 50px;
     background: url("sea.jpg") repeat fixed 50%;
+    font-size: 14px;
+    font-family: sans-serif;
 
 }
 
@@ -101,13 +105,8 @@ body{
     text-align: center;
 }
 
-#feature-apartments {
-    font-size: 14px;
-    font-family: sans-serif;
-    padding: 5px;
-}
 
-#feature-apartments  img{
+#feature-apartments img{
     width: 100%;
 }
 
@@ -138,7 +137,7 @@ body{
 
 /* The Close Button */
 .close {
-    color: #F9F7F7;
+    color: #fff;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -150,6 +149,7 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+
 /* tipka za saznaj vise */
 .more{
     background: none;
@@ -170,30 +170,9 @@ body{
     color: #112D4E;
 }
 
-/*buttoni za rezervaciju */
-#feature-apartments .botunko{
-	background-color:#112D4E;
-	border-radius:6px;
-	border:1px solid #112D4E;
-	display:inline-block;
-	cursor:pointer;
-	color:#F9F7F7;
-	font-family: Roboto;
-	font-size:14px;
-	font-weight:bold;
-	padding:0px 27px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #354D62;
-	float: right;
-
-}
-
-#feature-apartments  .botunko:hover{
-    color: #3F72AF;
-}
 
 /*villas*/
-/*feature-apartments*/
+/*feature-villas*/
 
 #feature-villas h2{
       margin: 1em 0 0.5em 0;
@@ -204,54 +183,28 @@ body{
       font-family: 'Roboto', sans-serif;
       text-align: center;
 }
+
 #feature-villas{
     color: #112D4E;
     background-color: #DFEBED;
     width: 100%;
-    border: 0px solid #769FCD;
-    border-radius: 5px;
-    padding: 25px;
-    background: url("sea2.jpg") repeat fixed 100%;
-}
-
-#feature-villas {
+    border: 1px solid #769FCD;
+    padding: 50px;
+    background: url("sea.jpg") repeat fixed 100%;
     font-size: 14px;
     font-family: sans-serif;
-    padding: 5px;
 }
 
 #feature-villas  img{
     width: 100%;
 }
 
-/*buttoni za rezervaciju */
-#feature-villas .botunko{
-	background-color:#112D4E;
-	border-radius:6px;
-	border:1px solid #112D4E;
-	display:inline-block;
-	cursor:pointer;
-	color:#F7FBFC;
-	font-family: Roboto;
-	font-size:14px;
-	font-weight:bold;
-	padding:0px 27px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #354D62;
-	float: right;
-}
-
-#feature-villas  .botunko:hover{
-    color: #3F72AF;
-}
-
-
 /*google maps box */
 #map {
     width: 100%;
     height: 50%;
     margin-bottom: 50px;
-    border: 2px solid #D6E6F2;
+    border: 1px solid #D6E6F2;
     border-radius: 5px;
 
 }
@@ -260,7 +213,7 @@ body{
   width: 100%;
   background: #3F72AF;
   border: 0px solid #3F72AF;
-  border-radius: 5px;
+
 }
 
 #foot h1{
@@ -284,15 +237,25 @@ div.kontakt{
 label{
     color: #F9F7F7;
 }
+
 input.text{
     height: 20px;
     width: 100%;
     border-radius: 5px;
+    border: 0px;
+    padding: 10px;
 }
+
 textarea.poruka{
     height: 200px;
     width: 100%;
     border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid #09C;
 }
 
 #kontakt{
@@ -310,4 +273,52 @@ textarea.poruka{
 svg{
     width: 100px;
     height: 100px;
+}
+
+/*buttons */
+
+/*button za kontakte*/
+
+.contact-buttons{
+  background-color:#112D4E;
+	border-radius:6px;
+	border:0px solid #112D4E;
+	display:inline-block;
+	cursor:pointer;
+	color:#F9F7F7;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #354D62;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.contact-buttons:hover{
+  color: #3F72AF;
+}
+
+/*buttoni za rezervaciju */
+.botunko{
+	background-color:#112D4E;
+	border-radius:6px;
+	border:0px solid #112D4E;
+	display:inline-block;
+	cursor:pointer;
+	color:#F9F7F7;
+	font-family: 'Roboto', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 27px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #354D62;
+	float: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.botunko:hover{
+    color: #3F72AF;
 }
