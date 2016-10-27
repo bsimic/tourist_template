@@ -39,29 +39,30 @@ body{
 
 /*navbar customizacija*/
 .navbar-custom {
-	background-color: #112D4E;
+	  background-color: #FF5722;
     color:#F9F7F7;
   	border-radius:0px;
     opacity: 0.8;
+
 }
 
 .navbar-custom .navbar-nav > li > a {
   	color: F9F7F7;
 }
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #F9F7F7;
+    color: #303841;
     background-color:transparent;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    background-color: #3F72AF;
-    color: #DBE2EF;
+    background-color: #EEEEEE;
+    color: #00ADB5;
     border-radius: 2px;
 }
 
 .navbar-custom .icon-bar {
-  background-color: #F9F7F7;
+    background-color: #F9F7F7;
 }
 
 /*Apartmani */
@@ -84,10 +85,10 @@ body{
 
 /*feature-apartments*/
 #feature-apartments{
-    color: #384259;
+    color: #303841;
     background-color: #DBE2EF;
     width: 100%;
-    border: 1px solid #769FCD;
+    border: 1px solid #303841;
     padding: 50px;
     background: url("sea.jpg") repeat fixed 50%;
     font-size: 14px;
@@ -97,7 +98,7 @@ body{
 
 #feature-apartments h2{
     margin: 1em 0 0.5em 0;
-    color: #112D4E;
+    color: #303841;
     font-weight: normal;
     font-size: 30px;
     line-height: 40px;
@@ -126,18 +127,18 @@ body{
 
 /* Modal Content/Box */
 .modal-content {
-    background: linear-gradient(#3F72AF, #3F72AF);
-    color: #F9F7F7;
+    background: linear-gradient(#ECECEB, #ECECEB);
+    color: #FF5722;
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #769FCD;
+    border: 1px solid #F9A828;
     width: 50%; /* Could be more or less, depending on screen size */
     text-align: left;
 }
 
 /* The Close Button */
 .close {
-    color: #fff;
+    color: #FF5722;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -145,7 +146,7 @@ body{
 
 .close:hover,
 .close:focus {
-    color: #112D4E;
+    color: #F9A828;
     text-decoration: none;
     cursor: pointer;
 }
@@ -157,7 +158,7 @@ body{
     padding: 0;
     font-style: italic;
     font-weight: bold;
-    color: #3F72AF;
+    color: #00ADB5;
 }
 
 .more:hover{
@@ -167,7 +168,7 @@ body{
     padding:0;
     font-style:italic;
     font-weight: bold;
-    color: #112D4E;
+    color: #FF5722;
 }
 
 
@@ -176,7 +177,7 @@ body{
 
 #feature-villas h2{
       margin: 1em 0 0.5em 0;
-      color: #112D4E;
+      color: #303841;
       font-weight: normal;
       font-size: 30px;
       line-height: 40px;
@@ -185,14 +186,14 @@ body{
 }
 
 #feature-villas{
-    color: #112D4E;
+    color: #303841;
     background-color: #DFEBED;
     width: 100%;
-    border: 1px solid #769FCD;
+    border: 1px solid #303841;
     padding: 50px;
     background: url("sea.jpg") repeat fixed 100%;
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #feature-villas  img{
@@ -204,25 +205,29 @@ body{
     width: 100%;
     height: 50%;
     margin-bottom: 50px;
-    border: 1px solid #D6E6F2;
+    border: 1px solid #FF5722;
     border-radius: 5px;
 
 }
 
 #foot{
   width: 100%;
-  background: #3F72AF;
+  background: #00ADB5;
   border: 0px solid #3F72AF;
 
 }
 
 #foot h1{
-  color: #DBE2EF;
+  color: #EEEEEE;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-style:italic;
 }
 
 footer{
-  background: #112D4E;
-  color: #F9F7F7;
+  background: #303841;
+  color: #303841;
   width: 100%;
   padding-top: 20px;
 }
@@ -243,7 +248,7 @@ input.text{
     width: 100%;
     border-radius: 5px;
     border: 0px;
-    padding: 10px;
+    padding: 5px;
 }
 
 textarea.poruka{
@@ -251,7 +256,7 @@ textarea.poruka{
     width: 100%;
     border-radius: 5px;
     border: 0px;
-    padding: 10px;
+    padding: 5px;
 }
 
 textarea:focus, input:focus {
@@ -280,9 +285,9 @@ svg{
 /*button za kontakte*/
 
 .contact-buttons{
-  background-color:#112D4E;
+  background-color:#FF5722;
 	border-radius:6px;
-	border:0px solid #112D4E;
+	border:0px solid #FF5722;
 	display:inline-block;
 	cursor:pointer;
 	color:#F9F7F7;
@@ -302,9 +307,9 @@ svg{
 
 /*buttoni za rezervaciju */
 .botunko{
-	background-color:#112D4E;
+	background-color:#FF5722;
 	border-radius:6px;
-	border:0px solid #112D4E;
+	border:0px solid #FF5722;
 	display:inline-block;
 	cursor:pointer;
 	color:#F9F7F7;
