@@ -9,13 +9,13 @@ body{
 }
 
 
-
 #stage{
   background: url("http://www.visiteurope.com/images/images/v1/Other_Adriatic_Coast-1_HD_L.JPEG") repeat fixed 100%;
   background-size: cover;
   color: white;
-  height: 100%;
+  height: 80%;
   width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -32,6 +32,7 @@ body{
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  font-size: 4em;
 }
 
 #stage-caption p{
@@ -93,11 +94,22 @@ body{
 
 }
 
+#feature-apartments h1{
+    margin: 1em 0 0.5em 0;
+    color: #089DE3;
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
 #feature-apartments h2{
     margin: 1em 0 0.5em 0;
     color: #089DE3;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 40px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -159,7 +171,7 @@ body{
     padding: 0;
     font-style: italic;
     font-weight: bold;
-    color: #FA8F26;
+    color: #3B5998;
 }
 
 .more:hover{
@@ -175,6 +187,27 @@ body{
 /*villas*/
 /*feature-villas*/
 
+#feature-villas{
+    color: #303841;
+    background-color: #ECEBE7;
+    width: 100%;
+    border: 1px solid #089DE3;
+    padding: 25px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#feature-villas h1{
+    margin: 1em 0 0.5em 0;
+    color: #089DE3;
+    font-weight: normal;
+    font-size: 4em;
+    line-height: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+
 #feature-villas h2{
       margin: 1em 0 0.5em 0;
       color: #089DE3;
@@ -186,15 +219,6 @@ body{
       font-style:italic;
 }
 
-#feature-villas{
-    color: #303841;
-    background-color: #ECEBE7;
-    width: 100%;
-    border: 1px solid #089DE3;
-    padding: 25px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-}
 
 #feature-villas  img{
     width: 100%;
@@ -223,6 +247,7 @@ body{
 .contact-button:hover{
   background-color: #3B5998;
   text-decoration:none;
+  color:#F9F7F7;
 }
 
 .contact-button-forma{
@@ -235,7 +260,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size:14px;
 	font-weight:bold;
-	padding:0px 27px;
+	padding:0px 20px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #354D62;
   padding-top: 10px;
@@ -245,6 +270,7 @@ body{
 .contact-button-forma:hover{
   background-color: #3B5998;
   text-decoration:none;
+  color:#F9F7F7;
 }
 
 /*buttoni za rezervaciju */
@@ -269,6 +295,7 @@ body{
 .button-book:hover{
     background-color: #3B5998;
     text-decoration:none;
+    color:#F9F7F7;
 }
 
 
@@ -285,7 +312,6 @@ body{
   width: 100%;
   background: #025A84;
   border: 0px solid #FA8F26;
-
 }
 
 #foot h1{
@@ -310,6 +336,10 @@ div.kontakt{
     width: 80%;
 }
 
+.inputs{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 label{
     color: #F9F7F7;
 }
