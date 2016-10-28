@@ -40,7 +40,7 @@ body{
 
 /*navbar customizacija*/
 .navbar-custom {
-	  background-color: #089DE3;
+	  background-color: #3B5998;
     color:#F9F7F7;
   	border-radius:0px;
     opacity: 0.8;
@@ -51,13 +51,11 @@ body{
 }
 
 .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #303841;
     background-color: #37AFE7;
 }
 
 .navbar-custom .navbar-nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #FA8F26;
     background-color: #37AFE7;
 }
 
@@ -86,11 +84,10 @@ body{
 /*feature-apartments*/
 #feature-apartments{
     color: #303841;
-    background-color: #DBE2EF;
+    background-color: #ECEBE7;
     width: 100%;
     border: 1px solid #089DE3;
     padding: 25px;
-    background: url("sea.jpg") repeat fixed 50%;
     font-size: 14px;
     font-family: sans-serif;
 
@@ -127,14 +124,13 @@ body{
 
 /* Modal Content/Box */
 .modal-content {
-    background: linear-gradient(#ECECEB, #ECECEB);
+    background: linear-gradient(#ECEBE7, #ECEBE7);
     color: #303841;
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #303841;
     width: 50%;
     text-align: left;
-    background: url("sea.jpg") repeat fixed 50%;
 }
 
 .modal h4{
@@ -192,11 +188,10 @@ body{
 
 #feature-villas{
     color: #303841;
-    background-color: #DFEBED;
+    background-color: #ECEBE7;
     width: 100%;
     border: 1px solid #089DE3;
     padding: 25px;
-    background: url("sea.jpg") repeat fixed 50%;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
@@ -225,7 +220,7 @@ body{
   padding-bottom: 10px;
 }
 .contact-button:hover{
-  color: #FA8F26;
+  background-color: #3B5998;
   text-decoration:none;
 }
 
@@ -246,12 +241,12 @@ body{
   padding-bottom: 10px;
 }
 .contact-button-forma:hover{
-  color: #FA8F26;
+  background-color: #3B5998;
   text-decoration:none;
 }
 
 /*buttoni za rezervaciju */
-.botunko{
+.button-book{
 	background-color:#089DE3;
 	border-radius:6px;
 	border:0px solid #089DE3;
@@ -269,8 +264,8 @@ body{
   padding-bottom: 5px;
 }
 
-.botunko:hover{
-    color: #FA8F26;
+.button-book:hover{
+    background-color: #3B5998;
     text-decoration:none;
 }
 
