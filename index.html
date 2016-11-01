@@ -26,6 +26,9 @@
          $.each(data.apartment, function(i, f) {
             var data_grabbed =
              "<p>"+"<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"+"</p>"+"<hr>"
+             "<p>"+"<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"+"</p>"+"<hr>"
+             "<p>"+"<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"+"</p>"+"<hr>"
+             "<p>"+"<b>"+"City:"+"</b>"+"<div style='float: right;'>"+ f.city + "</div>"+"</p>"+"<hr>"
              $(data_grabbed).appendTo("#apartment_1_data");
        });
      });
