@@ -19,20 +19,17 @@
 
   <script>
 function ajax_get_json(){
-    var name = document.getElementById("name1");
-    var adress = document.getElementById("adress1");
-    var price = document.getElementById("price1");
-    var city = document.getElementById("city1");
+    var results = document.getElementById("name1");
     var hr = new XMLHttpRequest();
     hr.open("GET", "data_apartments.json", true);
     hr.setRequestHeader("Content-type", "application/json", true);
     hr.onreadystatechange = function() {
 	    if(hr.readyState == 4 && hr.status == 200) {
 		    var data = JSON.parse(hr.responseText);
-			      name.innerHTML = data.name;
-            adress.innerHTML = data.adress;
-            price.innerHTML = data.price;
-            city.innerHTML = data.city;
+        results.innerHTML = "";
+        for(var obj in data){
+            results.innerHTML += data[obj].name+" is "+data[obj].adress+" and lives in "+data[obj].city+"<hr />";
+        }
 	    }
     }
     hr.send(null);
