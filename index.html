@@ -23,15 +23,15 @@
      var apartment = [];
 
      $.getJSON('data_apartments.json', function(data) {
-         $.each(data.apartment, function(i, f) {
+         $.this(data.apartment, function(i, f) {
             var name_grab = "<p>"+"<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"+"</p>"+"<hr>"
             var adress_grab = "<p>"+"<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"+"</p>"+"<hr>"
             var price_grab = "<p>"+"<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"+"</p>"+"<hr>"
-            var description_grab = "<p>"+"<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"+"</p>"+"<hr>"
+            
                   $(name_grab).appendTo("#apartment_1_name");
                   $(adress_grab).appendTo("#apartment_1_adress");
                   $(price_grab).appendTo("#apartment_1_price");
-                  $(description_grab).appendTo("#apartment_1_description");
+
        });
      });
   });
