@@ -17,27 +17,19 @@
   <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
 
 
+
   <script>
-  var xmlhttp = new XMLHttpRequest();
-  var url = "data_apartments.json";
+      $(function() {
+     var people = [];
 
-  xmlhttp.onreadystatechange=function() {
-      if (this.readyState == 4 && this.status == 200) {
-          myFunction(this.responseText);
-      }
-  }
-  xmlhttp.open("GET", url, true);
-  xmlhttp.send();
-
-  function myFunction(arr) {
-    var out = "";
-    var i;
-    for(i = 0; i<arr.length; i++) {
-        out += '<p>'+arr[i].name'</p>';
-    }
-    document.getElementById("name1").innerHTML = out;
-}
-</script>
+     $.getJSON('data_apartments.json', function(data) {
+         $.each(data.apartment, function(i, f) {
+            var tblRow = "<tr>" + "<td>" + f.name + "</td>" +
+             "<td>" + f.adress + "</td>" + "<td>" + f.city + "</td>" + "<td>" + f.price + "</td>" + "</tr>"
+             $(tblRow).appendTo("#apartmani tbody");
+       });
+     });
+  });
   </script>
 
 </head>
@@ -101,10 +93,17 @@
                     <img src="slider/slider1.jpg">
                   </div>
                   <div class="col-md-7">
-                    <p><b>Name:</b> <div id="name1" style="float: right;"></div></p><hr>
-                    <p><b>Adress:</b> <div id="adress1" style="float: right;"></div></p><hr>
-                    <p><b>Price:</b> <div id="price1" style="float: right;"></div></p><hr>
-                    <p><b>City:</b><div id="city1" style="float: right;"></div></p>
+                    <table id= "apartmani" border="2">
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>City</th>
+              </thead>
+                  <tbody>
+
+                   </tbody>
+                       </table>
                   </div></div>
                   <div class="row"></br>
                     <div class="col-md-12">
