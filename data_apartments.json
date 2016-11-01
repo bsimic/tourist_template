@@ -5,18 +5,6 @@
            "adress": "Ludovikova 12",
            "price": "500 €",
            "city": "Rijeka"
-       },
-       {
-           "name": "Apartmani Ex-Machina",
-           "adress": "AI 43",
-           "price": "1000 €",
-           "city": "Self-Maintained"
-       },
-       {
-           "name": "Apartmani Skynet",
-           "adress": "Future 2100",
-           "price": "800 €",
-           "city": "Earth"
        }
    ]
 }

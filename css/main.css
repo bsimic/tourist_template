@@ -146,8 +146,9 @@ body{
     margin: 10% auto;
     padding: 20px;
     border: 1px solid #303841;
-    width: 50%;
+    width: 80%;
     text-align: left;
+    overflow: auto; /* Enable scroll if needed */
 }
 
 .modal h4{
