@@ -1,3 +1,3 @@
-{"apartment1":[
-    {"name":"Apartmani Ludovik", "adress":"Rijecka 1", "city":"Rijeka", "price":"500€"}
-]}
+{
+  "apartment1":{ "name":"Apartman Ludovik", "adress":"Crapuya 1", "price":500, "city":"Rijeka"}
+}
