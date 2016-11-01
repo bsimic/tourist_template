@@ -20,16 +20,17 @@
 
   <script>
       $(function() {
-     var people = [];
+     var apartment = [];
 
      $.getJSON('data_apartments.json', function(data) {
          $.each(data.apartment, function(i, f) {
-            var data_grabbed =
-             "<p>"+"<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"+"</p>"+"<hr>"
-             "<p>"+"<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"+"</p>"+"<hr>"
-             "<p>"+"<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"+"</p>"+"<hr>"
-             "<p>"+"<b>"+"City:"+"</b>"+"<div style='float: right;'>"+ f.city + "</div>"+"</p>"+"<hr>"
-             $(data_grabbed).appendTo("#apartment_1_data");
+            var name_grab = "<p>"+"<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"+"</p>"+"<hr>"
+            var adress_grab = "<p>"+"<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"+"</p>"+"<hr>"
+            var price_grab = "<p>"+"<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"+"</p>"+"<hr>"
+
+                  $(name_grab).appendTo("#apartment_1_name");
+                  $(adress_grab).appendTo("#apartment_1_adress");
+                  $(price_grab).appendTo("#apartment_1_price");
        });
      });
   });
@@ -96,7 +97,9 @@
                     <img src="slider/slider1.jpg">
                   </div>
                   <div class="col-md-7">
-                    <div id="apartment_1_data"></div>
+                    <div id="apartment_1_name"></div>
+                    <div id="apartment_1_adress"></div>
+                    <div id="apartment_1_price"></div>
                   </div></div>
                   <div class="row"></br>
                     <div class="col-md-12">
