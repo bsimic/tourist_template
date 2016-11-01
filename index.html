@@ -16,6 +16,31 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Copse" rel="stylesheet">
 
+
+  <script>
+function ajax_get_json(){
+    var hr = new XMLHttpRequest();
+    hr.open("GET", "data_apartments.json", true);
+    hr.setRequestHeader("Content-type", "application/json", true);
+    hr.onreadystatechange = function() {
+	    if(hr.readyState == 4 && hr.status == 200) {
+		    var data = JSON.parse(hr.responseText);
+            var name = document.getElementById("name1");
+            var adress = document.getElementById("adress1");
+            var price = document.getElementById("price1");
+            var city = document.getElementById("city1");
+
+			name.innerHTML = data.name;
+            adress.innerHTML = data.adress;
+            price.innerHTML = data.price;
+            city.innerHTML = data.city
+	    }
+    }
+    hr.send(null);
+    results.innerHTML = "requesting...";
+}
+</script>
+
 </head>
 
 <body>
@@ -67,7 +92,6 @@
             <p><b>Adress:</b> <span style="float: right;">Ivanova 1, Rijeka</span></p>
             <p><b>Price:</b> <span style="float: right;">500 €</span></p></div>
             <div><button id="myBtn" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
-
             <!-- modal open-->
             <div id="myModal" class="modal">
               <div class="modal-content">
@@ -78,9 +102,10 @@
                     <img src="slider/slider1.jpg">
                   </div>
                   <div class="col-md-7">
-                    <p><b>Name:</b> <span style="float: right;">Apartment 1</span></p><hr>
-                    <p><b>Adress:</b> <span style="float: right;">Ivanova 1, Rijeka</span></p><hr>
-                    <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
+                    <p><b>Name:</b> <div id="name1" style="float: right;"></div></p><hr>
+                    <p><b>Adress:</b> <div id="adress1" style="float: right;"></div></p><hr>
+                    <p><b>Price:</b> <div id="price1" style="float: right;"></div></p><hr>
+                    <p><b>City:</b><div id="city1" style="float: right;"></div></p>
                   </div></div>
                   <div class="row"></br>
                     <div class="col-md-12">
@@ -565,17 +590,8 @@
   </div>
 </div>
 </footer>
-<script src="js/blueimp-gallery.min.js"></script>
-<script>
-document.getElementById('links').onclick = function (event) {
-event = event || window.event;
-var target = event.target || event.srcElement,
-    link = target.src ? target.parentNode : target,
-    options = {index: link, event: event},
-    links = this.getElementsByTagName('a');
-blueimp.Gallery(links, options);
-};
-</script>
+
+<script type="text/javascript">ajax_get_json();</script>
 <script>
   function initMap() {
     var myLatLng = {lat: 45.3430556, lng: 14.4091667};

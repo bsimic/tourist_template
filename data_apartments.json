@@ -1,0 +1,6 @@
+{"apartments":[
+    {"name":"Apartmani Ludovik", "adress":"Rijecka 1", "city":"Rijeka", "price":"500€"},
+	{"name":"Apartmani Ex-Machina", "adress":"Voloscanska 3", "city":"Volosko", "price":"600€"},    
+    {"name":"Apartmani Rubik", "adress":"Senjska 5", "city":"Senj", "price":"800€"},
+    {"name":"Apartmani Đorđe", "adress":"Dubrovcanska 11", "city":"Dubrovnik", "price":"1000€"} 
+]}
