@@ -24,9 +24,9 @@
 
      $.getJSON('data_apartments.json', function(data) {
          $.each(data.apartment, function(i, f) {
-            var name_grab = "<p>"+"<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"+"</p>"
-            var adress_grab = "<p>"+"<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"+"</p>"
-            var price_grab = "<p>"+"<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"+"</p>"
+            var name_grab = "<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"
+            var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
+            var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
 
                   $(name_grab).appendTo("#apartment_1_name");
                   $(adress_grab).appendTo("#apartment_1_adress");
