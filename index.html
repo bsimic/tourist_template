@@ -28,9 +28,13 @@
             var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
             var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
 
-                  $(name_grab).appendTo("#apartment_1_name");
-                  $(adress_grab).appendTo("#apartment_1_adress");
-                  $(price_grab).appendTo("#apartment_1_price");
+                  //$(name_grab).appendTo("#apartment_1_name");
+                  //$(adress_grab).appendTo("#apartment_1_adress");
+                  //$(price_grab).appendTo("#apartment_1_price");
+
+                  $("apartment_name"+$i).append($(name_grab));
+                  $("apartment_adress"+$i).append($(adress_grab));
+                  $("apartment_price"+$i).append($(adress_grab));
        });
      });
   });
@@ -98,10 +102,10 @@
                   </div>
                   <div class="col-md-7">
                       <ul>
-                          <li> <div id="apartment_1_name"></div></li>
-                          <li> <div id="apartment_1_adress"></div></li>
-                          <li> <div id="apartment_1_price"></div></li>
-                  </div></ul></div>
+                          <li> <div id="apartment_name1"></div></li>
+                          <li> <div id="apartment_adress1"></div></li>
+                          <li> <div id="apartment_price1"></div></li>
+                      </ul></div></div>
                   <div class="row"></br>
                     <div class="col-md-12">
                     <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
@@ -143,10 +147,11 @@
                     <img src="slider/slider2.jpg">
                   </div>
                   <div class="col-md-7">
-                    <p><b>Name:</b> <span style="float: right;">Apartman 2</span></p><hr>
-                    <p><b>Adress:</b> <span style="float: right;">Ivanova 2, Rijeka</span></p><hr>
-                    <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                  </div></div>
+                         <ul>
+                          <li> <div id="apartment_name2"></div></li>
+                          <li> <div id="apartment_adress2"></div></li>
+                          <li> <div id="apartment_price2"></div></li>
+                         </ul></div></div>
                   <div class="row"></br>
                     <div class="col-md-12">
                     <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,

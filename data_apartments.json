@@ -5,6 +5,12 @@
            "adress": "Ludovikova 12",
            "price": "500 €",
            "city": "Rijeka"
+       },
+       {
+            "name":"Apartmani Tomica",
+            "adress": "Fatty 1",
+            "price": "2 Kn",
+            "city": "Daleko"
        }
    ]
 }
