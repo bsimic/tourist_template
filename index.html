@@ -28,13 +28,10 @@
             var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
             var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
 
-                  //$(name_grab).appendTo("#apartment_1_name");
-                  //$(adress_grab).appendTo("#apartment_1_adress");
-                  //$(price_grab).appendTo("#apartment_1_price");
+                  $(name_grab).appendTo("#apartment_name"+$i);
+                  $(adress_grab).appendTo("#apartment_adress"+$i);
+                  $(price_grab).appendTo("#apartment_price"+$i);
 
-                  $("apartment_name"+$i).append($(name_grab));
-                  $("apartment_adress"+$i).append($(adress_grab));
-                  $("apartment_price"+$i).append($(adress_grab));
        });
      });
   });
