@@ -19,7 +19,7 @@
 
 
   <script>
-   /*   $(function() {
+      $(function() {
       var apartment = [];
 
      $.getJSON('data_apartments.json', function(data) {
@@ -28,14 +28,14 @@
             var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
             var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
 
-                  $(name_grab).appendTo("#apartment_name"+i);
-                  $(adress_grab).appendTo("#apartment_adress"+i);
-                  $(price_grab).appendTo("#apartment_price"+i);
+                  $(name_grab).appendTo("#apartment_name"+(i+1));
+                  $(adress_grab).appendTo("#apartment_adress"+(i+1));
+                  $(price_grab).appendTo("#apartment_price"+(i+1));
 
        });
      });
-  });*/
-      $(function() {
+  });
+    /*  $(function() {
           $.ajax({ 
             url: 'data_apartments.json',
             dataType: 'json',
@@ -49,7 +49,7 @@
                 }
             }
           })
-      });
+      });*/
   </script>
 
 </head>
