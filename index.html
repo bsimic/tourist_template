@@ -19,8 +19,8 @@
 
 
   <script>
-      $(function() {
-     var apartment = [];
+   /*   $(function() {
+      var apartment = [];
 
      $.getJSON('data_apartments.json', function(data) {
          $.each(data.apartment, function(i, f) {
@@ -34,7 +34,22 @@
 
        });
      });
-  });
+  });*/
+      $(function() {
+          $.ajax({ 
+            url: 'data_apartments.json',
+            dataType: 'json',
+            type: 'get',
+            cache: false,
+            success: function(data){
+                $(data.apartments).each(function(index,value){
+                    $(value.name).appendTo("#apartment_name"+value);
+                    $(value.adress).appendTo("#apartment_adress"+value);
+                    $(value.price).appendTo("#apartment_adress"+value);
+                }
+            }
+          })
+      });
   </script>
 
 </head>
