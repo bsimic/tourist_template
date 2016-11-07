@@ -43,9 +43,9 @@
             cache: false,
             success: function(data){
                 $(data.apartments).each(function(index,value){
-                    $(value.name).appendTo("#apartment_name"+value);
-                    $(value.adress).appendTo("#apartment_adress"+value);
-                    $(value.price).appendTo("#apartment_adress"+value);
+                    $(value.name).appendTo("#apartment_name"+index);
+                    $(value.adress).appendTo("#apartment_adress"+index);
+                    $(value.price).appendTo("#apartment_adress"+index);
                 }
             }
           })
