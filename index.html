@@ -27,11 +27,14 @@
             var name_grab = "<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"
             var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
             var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
+            var city_grab = "<b>"+"City:"+"</b>"+"<div style=' float:right;'>"+f.city+"</div>"
+            var desc_grab = "<h4>"+"Description:"+"</h4>"+ f.desc
 
                   $(name_grab).appendTo("#apartment_name"+(i+1));
                   $(adress_grab).appendTo("#apartment_adress"+(i+1));
                   $(price_grab).appendTo("#apartment_price"+(i+1));
-
+                  $(city_grab).appendTo("#apartment_city"+(i+1));
+                  $(desc_grab).appendTo("#apartment_desc"+(i+1));
        });
      });
   });
@@ -105,19 +108,7 @@
                       </ul></div></div>
                   <div class="row"></br>
                     <div class="col-md-12">
-                    <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                      kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                      slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                      s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.
-                      Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                      kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                      slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                      s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.
-                      Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                      kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                      slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                      s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.
-                    </span></p>
+                        <div class="apartment_desc1"></div> 
                   </div>
                 </div>
               </div>
