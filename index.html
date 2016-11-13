@@ -36,6 +36,19 @@
                   $(city_grab).appendTo("#apartment_city"+(i+1));
                   $(desc_grab).appendTo("#apartment_desc"+(i+1));
        });
+         $.each(data.vila, function(i,f){
+           var name_grab = "<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"
+           var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
+           var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
+           var city_grab = "<b>"+"City:"+"</b>"+"<div style=' float:right;'>"+ f.city +"</div>"
+           var desc_grab = "<h4>"+"Description:"+"</h4>"+ "<div class='description'>" + f.desc +"</div>"
+
+                 $(name_grab).appendTo("#villa_name"+(i+1));
+                 $(adress_grab).appendTo("#villa_adress"+(i+1));
+                 $(price_grab).appendTo("#villa_price"+(i+1));
+                 $(city_grab).appendTo("#villa_city"+(i+1));
+                 $(desc_grab).appendTo("#villa_desc"+(i+1));
+         });
      });
   });
   </script>
@@ -270,10 +283,9 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
         <div class="card">
           <img class="feature-img hidden-sm hidden-xs" src="villas/villa_1.jpg" alt="" />
-          <h2>Villa 1</h2>
-          <p><b>Name:</b> <span style="float: right;">Villa 1</span></p>
-          <p><b>Adress:</b> <span style="float: right;">Villanova 1, Rijeka</span></p>
-          <p><b>Price:</b> <span style="float: right;">500 €</span></p>
+          <h2>Villa Marija</h2>
+          <p><b>Adress:</b> <span style="float: right;">Georgeova 12, Rijeka</span></p>
+          <p><b>Price:</b> <span style="float: right;">1500 €</span></p>
           <div><button id="myBtn6" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
 
         <!-- modal open-->
@@ -282,22 +294,16 @@
               <span class="close">x</span>
               <h2>Villa 1</h2>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <img src="villas/villa_1.jpg">
                 </div>
-                <div class="col-md-7">
-                  <p><b>Name:</b> <span style="float: right;">Villa 1</span></p><hr>
-                  <p><b>Adress:</b> <span style="float: right;">Villanova 1, Rijeka</span></p><hr>
-                  <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                </div></div>
-                <div class="row"></br>
-                  <div class="col-md-12">
-                  <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                    kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                    slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                    s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</span></p>
-                </div>
-              </div>
+                <div class="col-md-6">
+                        <div id="villa_name1"></div>
+                        <div id="villa_adress1"></div>
+                        <div id="villa_price1"></div>
+                        <div id="villa_city1"></div>
+                        <div id="villa_desc1"></div>
+                    </div></div>
             </div>
           </div>
         <!--modal done-->
@@ -306,34 +312,27 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="card">
           <img class="feature-img hidden-sm hidden-xs" src="villas/villa_2.jpg" alt="" />
-          <h2>Villa 2</h2>
-          <p><b>Name:</b> <span style="float: right;">Villa 2</span></p>
-          <p><b>Adress:</b> <span style="float: right;">Villanova 2, Rijeka</span></p>
-          <p><b>Price:</b> <span style="float: right;">500 €</span></p>
+          <h2>Villa Carp</h2>
+          <p><b>Adress:</b> <span style="float: right;">Carpettieva 1, Oslo</span></p>
+          <p><b>Price:</b> <span style="float: right;">2000 €</span></p>
           <div><button id="myBtn7" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
 
         <!-- modal open-->
           <div id="myModal7" class="modal">
             <div class="modal-content">
               <span class="close">x</span>
-              <h2>Villa 2</h2>
+              <h2>Villa Carp</h2>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <img src="villas/villa_2.jpg">
                 </div>
-                <div class="col-md-7">
-                  <p><b>Name:</b> <span style="float: right;">Villa 2</span></p><hr>
-                  <p><b>Adress:</b> <span style="float: right;">Villanova 2, Rijeka</span></p><hr>
-                  <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                </div></div>
-                <div class="row"></br>
-                  <div class="col-md-12">
-                  <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                    kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                    slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                    s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</span></p>
-                </div>
-              </div>
+                <div class="col-md-6">
+                        <div id="villa_name2"></div>
+                        <div id="villa_adress2"></div>
+                        <div id="villa_price2"></div>
+                        <div id="villa_city2"></div>
+                        <div id="villa_desc2"></div>
+                    </div></div>
             </div>
           </div>
         <!--modal done-->
@@ -342,34 +341,27 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="card">
           <img class="feature-img hidden-sm hidden-xs" src="villas/villa_3.jpg" alt="" />
-          <h2>Villa 3</h2>
-          <p><b>Name:</b> <span style="float: right;">Villa 3</span></p>
-          <p><b>Adress:</b> <span style="float: right;">Villanova 3, Rijeka</span></p>
-          <p><b>Price:</b> <span style="float: right;">500 €</span></p>
+          <h2>Villa Ole</h2>
+          <p><b>Adress:</b> <span style="float: right;">Ole 14, Zagreb</span></p>
+          <p><b>Price:</b> <span style="float: right;">2000 €</span></p>
           <div><button id="myBtn8" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
 
         <!-- modal open-->
           <div id="myModal8" class="modal">
             <div class="modal-content">
               <span class="close">x</span>
-              <h2>Villa 3</h2>
+              <h2>Villa Ole</h2>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <img src="villas/villa_3.jpg">
                 </div>
-                <div class="col-md-7">
-                  <p><b>Name:</b> <span style="float: right;">Villa 3</span></p><hr>
-                  <p><b>Adress:</b> <span style="float: right;">Villanova 3, Rijeka</span></p><hr>
-                  <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                </div></div>
-                <div class="row"></br>
-                  <div class="col-md-12">
-                  <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                    kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                    slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                    s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</span></p>
-                </div>
-              </div>
+                <div class="col-md-6">
+                        <div id="villa_name3"></div>
+                        <div id="villa_adress3"></div>
+                        <div id="villa_price3"></div>
+                        <div id="villa_city3"></div>
+                        <div id="villa_desc3"></div>
+                    </div></div>
             </div>
           </div>
         <!--modal done-->
@@ -380,35 +372,28 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
         <div class="card">
           <img class="feature-img hidden-sm hidden-xs" src="villas/villa_4.jpg" alt="" />
-          <h2>Villa 4</h2>
-          <p><b>Name:</b> <span style="float: right;">Villa 4</span></p>
-          <p><b>Adress:</b> <span style="float: right;">Villanova 4, Rijeka</span></p>
-          <p><b>Price:</b> <span style="float: right;">500 €</span></p>
+          <h2>Villa AloAlo</h2>
+          <p><b>Adress:</b> <span style="float: right;">Alo 12, Senj</span></p>
+          <p><b>Price:</b> <span style="float: right;">1000 €</span></p>
           <div><button id="myBtn9" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
 
         <!-- modal open-->
           <div id="myModal9" class="modal">
             <div class="modal-content">
               <span class="close">x</span>
-              <h2>Villa 4</h2>
+              <h2>Villa AloAlo</h2>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <img src="villas/villa_4.jpg">
                 </div>
-                <div class="col-md-7">
-                  <p><b>Name:</b> <span style="float: right;">Villa 4</span></p><hr>
-                  <p><b>Adress:</b> <span style="float: right;">Villanova 4, Rijeka</span></p><hr>
-                  <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                </div></div>
-                <div class="row"></br>
-                  <div class="col-md-12">
-                  <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                    kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                    slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                    s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</span></p>
-                </div>
-              </div>
-            </div>
+                <div class="col-md-6">
+                        <div id="villa_name4"></div>
+                        <div id="villa_adress4"></div>
+                        <div id="villa_price4"></div>
+                        <div id="villa_city4"></div>
+                        <div id="villa_desc4"></div>
+                    </div></div>
+                  </div>
           </div>
         <!--modal done-->
         </div>
@@ -416,35 +401,28 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="card">
           <img class="feature-img hidden-sm hidden-xs" src="villas/villa_5.jpg" alt="" />
-          <h2>Villa 5</h2>
-          <p><b>Name:</b><span style="float: right;">Villa 5</span></p>
-          <p><b>Adress:</b> <span style="float: right;">Villanova 1, Rijeka</span></p>
-          <p><b>Price:</b> <span style="float: right;">500 €</span></p>
+          <h2>Villa Gladijator</h2>
+          <p><b>Adress:</b> <span style="float: right;">Semafor 1, Rijeka</span></p>
+          <p><b>Price:</b> <span style="float: right;">6000 €</span></p>
           <div><button id="myBtn10" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
 
         <!-- modal open-->
           <div id="myModal10" class="modal">
             <div class="modal-content">
               <span class="close">x</span>
-              <h2>Villa 5</h2>
+              <h2>Villa Gladijator</h2>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <img src="villas/villa_5.jpg">
                 </div>
-                <div class="col-md-7">
-                  <p><b>Name:</b><span style="float: right;">Villa 5</span></p><hr>
-                  <p><b>Adress:</b> <span style="float: right;">Villanova 1, Rijeka</span></p><hr>
-                  <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                </div></div>
-                <div class="row"></br>
-                  <div class="col-md-12">
-                  <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                    kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                    slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                    s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</span></p>
-                </div>
-              </div>
-            </div>
+                <div class="col-md-6">
+                        <div id="villa_name5"></div>
+                        <div id="villa_adress5"></div>
+                        <div id="villa_price5"></div>
+                        <div id="villa_city5"></div>
+                        <div id="villa_desc5"></div>
+                    </div></div>
+                  </div>
           </div>
         <!--modal done-->
         </div>
@@ -452,34 +430,27 @@
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <div class="card">
           <img class="feature-img hidden-sm hidden-xs" src="villas/villa_6.jpg" alt="" />
-          <h2>Villa 6</h2>
-          <p><b>Name:</b> <span style="float: right;">Villa 6</span></p>
-          <p><b>Adress:</b> <span style="float: right;">Villanova 1, Rijeka</span></p>
-          <p><b>Price:</b> <span style="float: right;">500 €</span></p>
+          <h2>Villa Ale</h2>
+          <p><b>Adress:</b> <span style="float: right;">Ale 11, Rijeka</span></p>
+          <p><b>Price:</b> <span style="float: right;">4000 €</span></p>
           <div><button id="myBtn11" class="more">Description</button><a href="#foot" class="button-book">Book now!</a></div>
 
         <!-- modal open-->
           <div id="myModal11" class="modal">
             <div class="modal-content">
               <span class="close">x</span>
-              <h2>Villa 6</h2>
+              <h2>Villa Ale</h2>
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <img src="villas/villa_6.jpg">
                 </div>
-                <div class="col-md-7">
-                  <p><b>Name:</b> <span style="float: right;">Villa 6</span></p><hr>
-                  <p><b>Adress:</b> <span style="float: right;">Villanova 1, Rijeka</span></p><hr>
-                  <p><b>Price:</b> <span style="float: right;">500 €</span></p><hr>
-                </div></div>
-                <div class="row"></br>
-                  <div class="col-md-12">
-                  <p><h4>Description:</h4><span>Lorem Ipsum je jednostavno probni tekst koji se koristi u tiskarskoj i slovoslagarskoj industriji. Lorem Ipsum postoji kao industrijski standard još od 16-og stoljeća,
-                    kada je nepoznati tiskar uzeo tiskarsku galiju slova i posložio ih da bi napravio knjigu s uzorkom tiska. Taj je tekst ne samo preživio pet stoljeća, već se i vinuo u svijet elektronskog
-                    slovoslagarstva, ostajući u suštini nepromijenjen. Postao je popularan tijekom 1960-ih s pojavom Letraset listova
-                    s odlomcima Lorem Ipsum-a, a u skorije vrijeme sa software-om za stolno izdavaštvo kao što je Aldus PageMaker koji također sadrži varijante Lorem Ipsum-a.</span></p>
-                </div>
-              </div>
+                <div class="col-md-6">
+                        <div id="villa_name6"></div>
+                        <div id="villa_adress6"></div>
+                        <div id="villa_price6"></div>
+                        <div id="villa_city6"></div>
+                        <div id="villa_desc6"></div>
+                    </div></div>
             </div>
           </div>
         <!--modal done-->
