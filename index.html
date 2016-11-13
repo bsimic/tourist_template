@@ -36,8 +36,6 @@
                   $(city_grab).appendTo("#apartment_city"+(i+1));
                   $(desc_grab).appendTo("#apartment_desc"+(i+1));
        });
-     });
-     $.getJSON('data_apartments.json', function(data){
        $.each(data.vila, function(i,f){
          var name_grab = "<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"
          var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
