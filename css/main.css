@@ -155,6 +155,9 @@ body{
   color: #089DE3;
 }
 
+.modal img{
+    padding: 10px;
+}
 /* The Close Button */
 .close {
     color: #089DE3;
