@@ -38,6 +38,26 @@
      });
   });
   </script>
+  <script>
+      $(function() {
+      var villa = [];
+     $.getJSON('data_villa.json', function(data) {
+         $.each(data.villa, function(i, f) {
+            var name_grab = "<b>"+"Name:"+"</b>"+"<div style='float: right;'>"+ f.name + "</div>"
+            var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
+            var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
+            var city_grab = "<b>"+"City:"+"</b>"+"<div style=' float:right;'>"+ f.city +"</div>"
+            var desc_grab = "<h4>"+"Description:"+"</h4>"+ "<div class='description'>" + f.desc +"</div>"
+
+                  $(name_grab).appendTo("#villa_name"+(i+1));
+                  $(adress_grab).appendTo("#villa_adress"+(i+1));
+                  $(price_grab).appendTo("#villa_price"+(i+1));
+                  $(city_grab).appendTo("#villa_city"+(i+1));
+                  $(desc_grab).appendTo("#villa_desc"+(i+1));
+       });
+     });
+  });
+  </script>
 
 </head>
 
