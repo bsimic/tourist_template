@@ -121,6 +121,11 @@ body{
     font-style: italic;
 }
 
+#myCarousel{
+    width: 80%;
+
+}
+
 #feature-apartments img{
     width: 100%;
 }
