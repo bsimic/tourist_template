@@ -27,13 +27,34 @@
             var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
             var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
             var city_grab = "<b>"+"City:"+"</b>"+"<div style=' float:right;'>"+ f.city +"</div>"
-            var desc_grab = "<h4>"+"Description:"+"</h4>"+ "<div class='description'>" + f.desc +"</div>"
+            var bath_grab = "<td>"+"Bathroom: "+"<td>"+f.bath + "</td>"
+            var room_grab = "<td>"+"Bedooms: "+"</td>"+"<td>"+f.rooms +"</td>"
+            var bed_grab = "<td>" + "Beds: "+"</td>" + "<td>" +  f.beds +"</td>"
+            var people_grab = "<td>"+"Maximum people:"+"</td>"+"<td>"+ f.people +"</td>"
+            var air_grab = "<td>" + "Air conditioning:" + "</td>" +"<td>"+f.air +"</td>"
+            var pool_grab = "<td>" + "Swimming pool: " + "</td>" + "<td>" + f.pool + "</td>"
+            var wifi_grab = "<td>" + "Free WiFi: " + "</td>" + "<td>" + f.wifi + "</td>"
+            var tv_grab = "<td>" + "TV: " + "</td>" + "<td>" + f.tv + "</td>"
+            var pets_grab = "<td>" + "Pets allowed: " + "</td>" + "<td>" + f.pets + "</td>"
+            var parking_grab = "<td>" + "Parking space: " + "</td>" + "<td>" + f.parking + "</td>"
+            var smoking_grab = "<td>" + "Smoking: " + "</td>" + "<td>" + f.smoking + "</td>"
+
 
                   $(name_grab).appendTo("#apartment_name"+(i+1));
                   $(adress_grab).appendTo("#apartment_adress"+(i+1));
                   $(price_grab).appendTo("#apartment_price"+(i+1));
                   $(city_grab).appendTo("#apartment_city"+(i+1));
-                  $(desc_grab).appendTo("#apartment_desc"+(i+1));
+                  $(room_grab).appendTo("#apartment_room"+(i+1));
+                  $(bed_grab).appendTo("#apartment_bed"+(i+1));
+                  $(people_grab).appendTo("#apartment_people"+(i+1));
+                  $(bath_grab).appendTo("#apartment_bath"+(i+1));
+                  $(air_grab).appendTo("#apartment_air"+(i+1));
+                  $(wifi_grab).appendTo("#apartment_wifi"+(i+1));
+                  $(tv_grab).appendTo("#apartment_tv"+(i+1));
+                  $(pool_grab).appendTo("#apartment_pool"+(i+1));
+                  $(pets_grab).appendTo("#apartment_pets"+(i+1));
+                  $(parking_grab).appendTo("#apartment_parking"+(i+1));
+                  $(smoking_grab).appendTo("#apartment_smoking"+(i+1));
        });
      });
   });
@@ -119,11 +140,23 @@
                     <img src="slider/slider1.jpg">
                   </div>
                   <div class="col-md-6">
-                          <div id="apartment_name1"></div>
-                          <div id="apartment_adress1"></div>
-                          <div id="apartment_price1"></div>
-                          <div id="apartment_city1"></div>
-                          <div id="apartment_desc1"></div>
+                    <table>
+                          <tr id="apartment_name1"></tr>
+                          <tr id="apartment_adress1"></tr>
+                          <tr id="apartment_price1"></tr>
+                          <tr id="apartment_city1"></tr>
+                          <tr id="apartment_rooms1"></tr>
+                          <tr id="apartment_people1"></tr>
+                          <tr id="apartment_beds1"></tr>
+                          <tr id="apartment_bath1"></tr>
+                          <tr id="apartment_air1"></tr>
+                          <tr id="apartment_wifi1"></tr>
+                          <tr id="apartment_tv1"></tr>
+                          <tr id="apartment_pets1"></tr>
+                          <tr id="apartment_pool1"></tr>
+                          <tr id="apartment_smoking1"></tr>
+                          <tr id="apartment_parking1"></tr>
+                    </table>
                       </div></div>
               </div>
             </div>
