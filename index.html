@@ -27,17 +27,18 @@
             var adress_grab = "<b>"+"Adress:"+"</b>"+"<div style='float: right;'>"+ f.adress + "</div>"
             var price_grab = "<b>"+"Price:"+"</b>"+"<div style='float: right;'>"+ f.price + "</div>"
             var city_grab = "<b>"+"City:"+"</b>"+"<div style=' float:right;'>"+ f.city +"</div>"
-            var bath_grab = "<td>"+"Bathroom: "+"<td>"+f.bath + "</td>"
-            var room_grab = "<td>"+"Bedooms: "+"</td>"+"<td>"+f.rooms +"</td>"
-            var bed_grab = "<td>" + "Beds: "+"</td>" + "<td>" +  f.beds +"</td>"
-            var people_grab = "<td>"+"Maximum people:"+"</td>"+"<td>"+ f.people +"</td>"
-            var air_grab = "<td>" + "Air conditioning:" + "</td>" +"<td>"+f.air +"</td>"
-            var pool_grab = "<td>" + "Swimming pool: " + "</td>" + "<td>" + f.pool + "</td>"
-            var wifi_grab = "<td>" + "Free WiFi: " + "</td>" + "<td>" + f.wifi + "</td>"
-            var tv_grab = "<td>" + "TV: " + "</td>" + "<td>" + f.tv + "</td>"
-            var pets_grab = "<td>" + "Pets allowed: " + "</td>" + "<td>" + f.pets + "</td>"
-            var parking_grab = "<td>" + "Parking space: " + "</td>" + "<td>" + f.parking + "</td>"
-            var smoking_grab = "<td>" + "Smoking: " + "</td>" + "<td>" + f.smoking + "</td>"
+
+            var bath_grab = "<div><b>"+"Bathroom: "+"</b></div><div style='float: right'>"+f.bath + "</div>"
+            var room_grab = "<div><b>"+"Bedrooms: "+"</b></div><div style='float: right'>"++f.rooms +"</div>"
+            var bed_grab = "<div>" + "Beds: "+"</div>" + "<div style='float: right'>" +  f.beds +"</div>"
+            var people_grab = "<div>"+"Maximum people:"+"</div>"+"<div style='float: right'>">"+ f.people +"</div>"
+            var air_grab = "<div>" + "Air conditioning:" + "</div>" +"<div style='float: right'>">"+f.air +"</div>"
+            var pool_grab = "<div>" + "Swimming pool: " + "</div>" + "<div style='float: right'>">" + f.pool + "</div>"
+            var wifi_grab = "<div>" + "Free WiFi: " + "</div style='float: right'>">" + "<div>" + f.wifi + "</div>"
+            var tv_grab = "<div>" + "TV: " + "</div>" + "<div style='float: right'>">" + f.tv + "</div>"
+            var pets_grab = "<div><b>" + "Pets allowed: " + "</b></div>" + "<div style='float: right'>" + f.pets + "</div>"
+            var parking_grab = "<div><b>" + "Parking space: " + "</b></div>" + "<div style='float: right'>" + f.parking + "</div>"
+            var smoking_grab = "<div><b>" + "Smoking: " + "</div>" + "</b><div style='float: right'>" + f.smoking + "</div>"
 
 
                   $(name_grab).appendTo("#apartment_name"+(i+1));
@@ -140,23 +141,22 @@
                     <img src="slider/slider1.jpg">
                   </div>
                   <div class="col-md-6">
-                    <table>
-                          <tr id="apartment_name1"></tr>
-                          <tr id="apartment_adress1"></tr>
-                          <tr id="apartment_price1"></tr>
-                          <tr id="apartment_city1"></tr>
-                          <tr id="apartment_rooms1"></tr>
-                          <tr id="apartment_people1"></tr>
-                          <tr id="apartment_beds1"></tr>
-                          <tr id="apartment_bath1"></tr>
-                          <tr id="apartment_air1"></tr>
-                          <tr id="apartment_wifi1"></tr>
-                          <tr id="apartment_tv1"></tr>
-                          <tr id="apartment_pets1"></tr>
-                          <tr id="apartment_pool1"></tr>
-                          <tr id="apartment_smoking1"></tr>
-                          <tr id="apartment_parking1"></tr>
-                    </table>
+                          <div id="apartment_name1"></div>
+                          <div id="apartment_adress1"></div>
+                          <div id="apartment_price1"></div>
+                          <div id="apartment_city1"></div>
+                          <h4>Features:</h4>
+                          <div id="apartment_rooms1"></div>
+                          <div id="apartment_people1"></div>
+                          <div id="apartment_beds1"></div>
+                          <div id="apartment_bath1"></div>
+                          <div id="apartment_air1"></div>
+                          <div id="apartment_wifi1"></div>
+                          <div id="apartment_tv1"></div>
+                          <div id="apartment_pets1"></div>
+                          <div id="apartment_pool1"></div>
+                          <div id="apartment_smoking1"></div>
+                          <div id="apartment_parking1"></div>
                       </div></div>
               </div>
             </div>
